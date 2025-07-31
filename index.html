@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DataVortex Sky Intellect 2025</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackathon Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #e6f2ff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .club-card {
+      background-color: #003366;
+      color: #fff;
+      position: relative;
+    }
+
+    .club-details {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+
+    .read-more {
+      margin-top: 10px;
+      background: #fff;
+      color: #003366;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+  </style>
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="VEDA_WHITE.png" alt="Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Welcome to DataVortex Sky Intellect 2025</h1>
-      <p>Where Innovation Meets Intellect. Hack your way to brilliance!</p>
-      <img src="ss.jpg" class="hero-image" alt="Hero Banner">
-    </div>
-  </section>
-
-  <section class="gallery" id="events">
-    <h2>Event Highlights</h2>
-    <div class="card-container">
-      <div class="card"><img src="h1.png" alt="h1"></div>
-      <div class="card"><img src="h2.png" alt="h2"></div>
-      <div class="card"><img src="sp1.jpg" alt="sp1"></div>
-      <div class="card"><img src="sp2.jpg" alt="sp2"></div>
-      <div class="card"><img src="sods2.png" alt="sods"></div>
-    </div>
-  </section>
-
-  <section class="sponsors" id="sponsors">
-    <h2>Our Sponsors</h2>
-    <div class="sponsor-logos">
-      <img src="irdlogossssss.png" alt="IRD">
-      <img src="saclogossssss.png" alt="SAC">
-      <img src="garuda2.png" alt="Garuda">
+  <section class="section">
+    <h2>About the Hackathon</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Rules & Guidelines</h3>
+        <ul>
+          <li>Team size: 1 to 4 members.</li>
+          <li>Submissions via Unstop or Devpost only.</li>
+          <li>No multiple team participation.</li>
+          <li>Projects must be original & innovative.</li>
+          <li>Internship opportunities based on performance.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Judging Criteria</h3>
+        <ul>
+          <li>Innovation – 15%</li>
+          <li>Creativity – 35%</li>
+          <li>Functionality – 30%</li>
+          <li>Business Model – 10%</li>
+          <li>Presentation – 10%</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Exciting Prizes</h3>
+        <ul>
+          <li>Internship Opportunities</li>
+          <li>Cash Rewards, Mementos & more</li>
+          <li>Top 3 Winners awarded</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email us at <a href="mailto:info@datavortex.in">info@datavortex.in</a></p>
+  <section class="section">
+    <h2>Organizing Clubs</h2>
+    <div class="card-grid">
+      <div class="card club-card">
+        <h3>SODS Club</h3>
+        <p>The School of Data Science promotes AI, ML, and data science engagement.</p>
+        <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+        <div class="club-details">
+          <p>SODS actively works on applied data projects and hosts workshops on advanced analytics, Python, and data visualization tools like Power BI & Tableau.</p>
+        </div>
+      </div>
+
+      <div class="card club-card">
+        <h3>Garuda Club</h3>
+        <p>Leading electronics & robotics club focusing on hardware innovation and IoT.</p>
+        <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+        <div class="club-details">
+          <p>Garuda regularly participates in national robotics contests, builds drones, bots, and offers hands-on IoT device development guidance to students.</p>
+        </div>
+      </div>
+
+      <div class="card club-card">
+        <h3>Cyber Security Club</h3>
+        <p>Focuses on ethical hacking, threat analysis, and secure coding practices.</p>
+        <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+        <div class="club-details">
+          <p>They conduct Capture-the-Flag events, vulnerability assessments, and host sessions with security experts to prepare students for real-world cyber challenges.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 DataVortex Sky Intellect. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-
-  <section class="cta">
-  <h2>Ready to Dive In?</h2>
-  <p>Register or explore tracks to start your journey!</p>
-  <div class="cta-buttons">
-    <a href="#register" class="btn primary">Register Now</a>
-    <a href="#tracks" class="btn secondary">Explore Tracks</a>
-  </div>
-</section>
-
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      if (details.style.display === 'block') {
+        details.style.display = 'none';
+        button.textContent = 'Read More';
+      } else {
+        details.style.display = 'block';
+        button.textContent = 'Show Less';
+      }
+    }
+  </script>
 </body>
-
 </html>
